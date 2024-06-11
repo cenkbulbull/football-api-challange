@@ -1,5 +1,33 @@
-<template name="home">
-  <div>
-    home
+<template name="home">  
+
+  <div class="home">
+
+    <div class="home__header">
+
+      <div class="home__header-title">
+
+        <div class="home__header-title-left-side">
+          {{> icon class="football-fill"}}
+          <span class="home__header-title-left-side-text">Futbol API</span>
+        </div>
+  
+        <div class="home__header-title-right-side">
+          {{> select}}
+        </div>
+
+      </div>
+
+      <div class="home__header-menu">
+        {{# tabMenuItem class=""}} Fikstür {{/ tabMenuItem}}
+        {{# tabMenuItem class="tab-item--active"}} Puan Durumu {{/ tabMenuItem}}
+        {{# tabMenuItem }} Gol Kralları {{/ tabMenuItem}}
+      </div>
+
+    </div>
+
+    <div class="home__result">
+      {{> tabView}}
+    </div>
+
   </div>
 </template>
