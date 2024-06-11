@@ -15,6 +15,11 @@ import './atoms/Select/index.html'
 import './components/TeamInfo/index.html'
 import './components/PlayerInfo/index.html'
 import './components/FixtureInfo/index.html'
+import './components/TabView/index.html'
+import './components/TabMenuItem/index.html'
+
+//extra js
+import './lib/extra.js'
 
 Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0
