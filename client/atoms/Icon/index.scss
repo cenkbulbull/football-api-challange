@@ -1,0 +1,14 @@
+@import '../../styles/base/typography';
+@import '../../styles/base/variables';
+
+.icon{
+  &--size14{
+    font-size: $font-size-sm;
+  }
+  &--size16{
+    font-size: $font-size-lg; 
+  }
+  &--size20{
+    font-size: $font-size-xl;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../styles/base/typography';
+@import '../../styles/base/variables';
+
+.avatar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  background-color: $chaos-black;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  border-radius: 12px;
+
+  &--size32{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+  }
+
+  &--purple{
+    background-color: $swiss-plum;
+  }
+}

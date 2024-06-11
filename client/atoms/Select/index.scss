@@ -1,0 +1,13 @@
+@import '../../styles/base/typography';
+@import '../../styles/base/variables';
+
+.select{
+  background-color: $placebo;
+  color: $digital ;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-normal;
+  padding: 8px 8px 8px 16px;
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+}

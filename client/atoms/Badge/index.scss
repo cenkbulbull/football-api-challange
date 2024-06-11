@@ -1,0 +1,31 @@
+@import '../../styles/base/typography';
+@import '../../styles/base/variables';
+
+.badge{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $digital;
+  color: $white;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  padding: 6px 16px;
+  border-radius: 16px;
+
+  &--purple{
+    background-color: $swiss-plum-10;
+    color: $swiss-plum;
+  }
+
+  &--danger{
+    background-color: $danger-10;
+    color: $danger;
+  }
+
+  &--large{
+    font-size: $font-size-sm;
+    font-weight: $font-weight-normal;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+}
