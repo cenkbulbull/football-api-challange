@@ -4,12 +4,17 @@ import { ReactiveVar } from 'meteor/reactive-var'
 import './main.html'
 import './router'
 
-// components
+// atoms
 import './atoms/Button/index.html'
 import './atoms/Icon/index.html'
 import './atoms/Avatar/index.html'
 import './atoms/Badge/index.html'
 import './atoms/Select/index.html'
+
+//components
+import './components/TeamInfo/index.html'
+import './components/PlayerInfo/index.html'
+import './components/FixtureInfo/index.html'
 
 Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0

@@ -1,0 +1,37 @@
+<template name="fixtureInfo">
+
+  <div class="fixture-info">
+
+    <div class="fixture-info__team">
+
+      <div class="fixture-info__team-first">
+        {{> avatar class="avatar--purple avatar--size32"}}
+        <span>Argentina</span>
+      </div> 
+
+      <div class="fixture-info__team-score">
+        {{# badge class="badge--purple"}} <span>2-1</span> {{/ badge}}
+      </div>
+
+      <div class="fixture-info__team-second">
+        <span>Argentina</span>
+        {{> avatar class="avatar--purple avatar--size32"}}
+      </div>
+
+    </div>
+
+    <div class="fixture-info__time">
+      {{# badge class="badge--danger badge--large"}} <span>Maç Sonu</span> {{/ badge}}
+    </div>
+
+    <div class="fixture-info__status">
+      <span class="fixture-info__status-date">18 December 2022</span>
+      <div class="fixture-info__status-button-group">
+        {{> button class="button--outline" iconClass="information-line icon--size20"}}
+        {{> button class="button--outline" iconClass="line-chart-line icon--size20"}}
+      </div>
+    </div>
+
+  </div>
+
+</template>
