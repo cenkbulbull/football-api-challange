@@ -5,8 +5,11 @@ import './main.html'
 import './router'
 
 // components
-import './atoms/Button.html'
-import './atoms/Icon.html'
+import './atoms/Button/index.html'
+import './atoms/Icon/index.html'
+import './atoms/Avatar/index.html'
+import './atoms/Badge/index.html'
+import './atoms/Select/index.html'
 
 Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0

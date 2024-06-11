@@ -1,0 +1,6 @@
+@import './base/typography';
+@import './base/variables';
+
+* {
+  font-family: $font-family-inter;
+}
