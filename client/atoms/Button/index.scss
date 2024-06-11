@@ -11,4 +11,9 @@
     background-color: $transparent;
     color: #a4a4a4;
   }
+
+  &--error{
+    background-color: $danger;
+    color: $white;
+  }
 }
