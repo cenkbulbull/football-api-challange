@@ -12,21 +12,29 @@
         </div>
   
         <div class="home__header-title-right-side">
-          {{> select}}
+          {{# select}} 
+            {{#if isLoading}}
+              <option>Yükleniyor</option>
+            {{else}} 
+              {{#each leagues}}
+                <option value="{{this.key}}">{{this.league}}</option>
+              {{/each}} 
+            {{/if}}
+          {{/ select}}
         </div>
 
       </div>
 
       <div class="home__header-menu">
-        {{# tabMenuItem class=""}} Fikstür {{/ tabMenuItem}}
-        {{# tabMenuItem class="tab-item--active"}} Puan Durumu {{/ tabMenuItem}}
-        {{# tabMenuItem }} Gol Kralları {{/ tabMenuItem}}
+        {{# tabMenuItem id="results"}} Fikstür {{/ tabMenuItem}}
+        {{# tabMenuItem id="league"}} Puan Durumu {{/ tabMenuItem}}
+        {{# tabMenuItem id="goalKings"}} Gol Kralları {{/ tabMenuItem}}
       </div>
 
     </div>
 
     <div class="home__result">
-      {{> tabView}}
+      {{> tabView selectedLeague=selectedLeague activeTab=activeTab}}
     </div>
 
   </div>

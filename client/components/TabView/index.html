@@ -1,39 +1,61 @@
 <template name="tabView">
-  <div class="tab-view">
-    <div class="tab-view__item">{{> fixtureInfo}}</div>
-  </div>
-
-  <div class="tab-view">
-    <div class="tab-view__title">
-      <div class="tab-view__title-left-side">
-        <span>Kulüp</span>
-      </div>
-
-      <div class="tab-view__title-right-side">
-        <span>Maç</span>
-        <span>Gol</span>
-      </div>
+  {{#if isActive 'results'}}
+    <div id="results" class="tab-view tab-view--active">
+      {{#if isLoading}}
+        <div class="tab-view__loading">Yükleniyor</div>
+      {{else}} 
+        {{#each info}}
+          <div class="tab-view__item">{{> fixtureInfo info=this}}</div>
+        {{/each}}
+      {{/if}}
     </div>
+  {{/if}}
 
-    <div class="tab-view__item">{{> playerInfo}}</div>
-
-    <div class="tab-view__item">{{> playerInfo}}</div>
-  </div>
-
-  <div class="tab-view tab-view--active">
-    <div class="tab-view__title">
-      <div class="tab-view__title-left-side">
-        <span>Kulüp</span>
+  {{#if isActive 'league'}}
+    <div id="league" class="tab-view tab-view--active">
+      <div class="tab-view__title">
+        <div class="tab-view__title-left-side">
+          <span>Kulüp</span>
+        </div>
+        <div class="tab-view__title-right-side">
+          <span>G</span>
+          <span>B</span>
+          <span>M</span>
+          <span>Puan</span>
+        </div>
       </div>
 
-      <div class="tab-view__title-right-side">
-        <span>G</span>
-        <span>B</span>
-        <span>M</span>
-        <span>Puan</span>
-      </div>
+      {{#if isLoading}}
+        <div class="tab-view__loading">Yükleniyor</div>
+      {{else}} 
+        {{#each info}}
+          <div class="tab-view__item">{{> teamInfo info=this }}</div>
+        {{/each}}
+      {{/if}}
+      
     </div>
+  {{/if}}
 
-    <div class="tab-view__item">{{> teamInfo}}</div>
-  </div>
+  {{#if isActive 'goalKings'}}
+    <div id="goalKings" class="tab-view tab-view--active">
+      <div class="tab-view__title">
+        <div class="tab-view__title-left-side">
+          <span>Oyuncu</span>
+        </div>
+        <div class="tab-view__title-right-side">
+          <span>Maç</span>
+          <span>Gol</span>
+        </div>
+      </div>
+
+      {{#if isLoading}}
+        <div class="tab-view__loading">Yükleniyor</div>
+      {{else}} 
+        {{#each info}}
+          <div class="tab-view__item">{{> playerInfo info=this }}</div>
+        {{/each}}
+      {{/if}}
+      
+    </div>
+  {{/if}}
 </template>

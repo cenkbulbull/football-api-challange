@@ -4,15 +4,15 @@
     <div class="team-info__left-side">
 
       <div class="team-info__left-side-order">
-        1
+        {{info.rank}}
       </div>
 
       <div class="team-info__left-side-avatar">
-        {{# avatar class="avatar--purple"}}<span>{{getFirstTwoCharsUpperCase "Chelsea"}}</span> {{/avatar}}
+        {{# avatar class="avatar--purple"}}<span>{{getFirstTwoCharsUpperCase info.team}}</span> {{/avatar}}
       </div>
 
       <div class="team-info__left-side-team">
-        Chelsea
+        {{info.team}}
       </div>
 
     </div>
@@ -20,19 +20,19 @@
     <div class="team-info__right-side">
 
       <div class="team-info__right-side-win">
-        14
+        {{info.win}}
       </div>
 
       <div class="team-info__right-side-equal">
-        3
+        {{info.draw}}
       </div>
 
       <div class="team-info__right-side-defeat">
-        1
+        {{info.lose}}
       </div>
 
       <div class="team-info__right-side-points">
-        35
+        {{info.point}}
       </div>
 
     </div>
