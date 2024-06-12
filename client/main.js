@@ -20,4 +20,4 @@ import './pages/Home/index.js'
 import './components/TabView/index.js'
 
 //extra js
-import './lib/extra.js'
+import './lib/helpers.js'
