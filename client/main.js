@@ -17,6 +17,7 @@ import './components/TabMenuItem/index.html'
 
 // templates
 import './pages/Home/index.js'
+import './components/TabView/index.js'
 
 //extra js
 import './lib/extra.js'
