@@ -15,7 +15,7 @@
   &__header{
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 42px;
 
     &-title{
       display: flex;
@@ -37,7 +37,7 @@
 
     &-menu{
       border-bottom: 4px solid $crystal-bell;
-      padding: 11px;
+      padding: 12px;
     } 
   }
 
