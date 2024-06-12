@@ -52,7 +52,7 @@
         <div class="tab-view__loading">Yükleniyor</div>
       {{else}} 
         {{#each info}}
-          <div class="tab-view__item">{{> playerInfo info=this }}</div>
+          <div class="tab-view__item">{{> playerInfo info=this index=(increment @index) }}</div>
         {{/each}}
       {{/if}}
       

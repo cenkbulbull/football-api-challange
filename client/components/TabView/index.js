@@ -33,3 +33,7 @@ Template.tabView.helpers({
     return Template.instance().info.get()
   }
 });
+
+Template.registerHelper('increment', function(value) {
+  return value + 1;
+});
