@@ -20,5 +20,9 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    
+    &-win, &-equal, &-defeat, &-points{
+      font-weight: $font-weight-light;
+    }
   }
 }

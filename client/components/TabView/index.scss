@@ -3,7 +3,7 @@
 
 .tab-view{
   display: none;
-
+  
   &--active{
     display: flex;
     flex-direction: column;
@@ -22,5 +22,9 @@
       font-size: $font-size-lg;
       font-weight: $font-weight-light;
     }
+  }
+
+  &__loading{
+    text-align: center;
   }
 }

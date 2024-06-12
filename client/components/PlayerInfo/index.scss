@@ -20,5 +20,9 @@
     display: flex;
     align-items: center;
     gap: 16px;
+
+    &-match, &-goals{
+      font-weight: $font-weight-light;
+    }
   }
 }
