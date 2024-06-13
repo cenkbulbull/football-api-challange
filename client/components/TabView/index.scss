@@ -9,7 +9,7 @@
     flex-direction: column;
     gap: 8px;
   }
-
+  
   &__title{
     display: flex;
     justify-content: space-between;
@@ -17,10 +17,13 @@
 
     &-right-side, &-left-side{
       display: flex;
-      gap: 8px;
       color: $digital;
       font-size: $font-size-lg;
       font-weight: $font-weight-light;
+
+      &-win, &-equal, &-defeat, &-points, &-goal, &-match{
+        width: 60px;
+      }
     }
   }
 

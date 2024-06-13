@@ -18,10 +18,23 @@
           <span>Kulüp</span>
         </div>
         <div class="tab-view__title-right-side">
-          <span>G</span>
-          <span>B</span>
-          <span>M</span>
-          <span>Puan</span>
+          
+          <div class="tab-view__title-right-side-win">
+            G
+          </div>
+    
+          <div class="tab-view__title-right-side-equal">
+            B
+          </div>
+    
+          <div class="tab-view__title-right-side-defeat">
+            M
+          </div>
+    
+          <div class="tab-view__title-right-side-points">
+            Puan
+          </div>
+    
         </div>
       </div>
 
@@ -39,13 +52,21 @@
   {{#if isActive 'goalKings'}}
     <div id="goalKings" class="tab-view tab-view--active">
       <div class="tab-view__title">
+
         <div class="tab-view__title-left-side">
           <span>Oyuncu</span>
         </div>
+
         <div class="tab-view__title-right-side">
-          <span>Maç</span>
-          <span>Gol</span>
+          <div class="tab-view__title-right-side-match">
+            Maç
+          </div>
+    
+          <div class="tab-view__title-right-side-goal">
+            Gol
+          </div>
         </div>
+        
       </div>
 
       {{#if isLoading}}
