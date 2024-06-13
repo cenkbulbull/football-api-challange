@@ -5,8 +5,10 @@
     <div class="fixture-info__team">
 
       <div class="fixture-info__team-details">
+
         {{# avatar class="avatar--purple avatar--size32"}}<span>{{getFirstTwoCharsUpperCase info.home}}</span> {{/avatar}}
         <span class="fixture-info__team-details-home">{{info.home}}</span>
+
       </div> 
 
       <div class="fixture-info__team-score">
@@ -14,6 +16,7 @@
       </div>
 
       <div class="fixture-info__team-details">
+
         <span class="fixture-info__team-details-away">{{info.away}}</span>
         {{# avatar class="avatar--purple avatar--size32"}}<span>{{getFirstTwoCharsUpperCase info.away}}</span> {{/avatar}}
       </div>
@@ -25,11 +28,14 @@
     </div>
 
     <div class="fixture-info__status">
+
       <span class="fixture-info__status-date">{{getShortenText info.date}}</span>
+
       <div class="fixture-info__status-button-group">
         {{> button class="button--outline" iconClass="information-line icon--size20"}}
         {{> button class="button--outline" iconClass="line-chart-line icon--size20"}}
       </div>
+
     </div>
 
   </div>

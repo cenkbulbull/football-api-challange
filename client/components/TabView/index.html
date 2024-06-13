@@ -1,6 +1,9 @@
 <template name="tabView">
+
   {{#if isActive 'results'}}
+
     <div id="results" class="tab-view">
+
       {{#if isLoading}}
         <div class="tab-view__loading">Yükleniyor</div>
       {{else}} 
@@ -8,15 +11,21 @@
           <div class="tab-view__item tab-view__item--fixture">{{> fixtureInfo info=this}}</div>
         {{/each}}
       {{/if}}
+
     </div>
+
   {{/if}}
 
   {{#if isActive 'league'}}
+
     <div id="league" class="tab-view">
+
       <div class="tab-view__title">
+
         <div class="tab-view__title-left-side">
           <span>Kulüp</span>
         </div>
+
         <div class="tab-view__title-right-side">
           
           <div class="tab-view__title-right-side-item">
@@ -36,6 +45,7 @@
           </div>
     
         </div>
+
       </div>
 
       {{#if isLoading}}
@@ -47,10 +57,13 @@
       {{/if}}
       
     </div>
+
   {{/if}}
 
   {{#if isActive 'goalKings'}}
+
     <div id="goalKings" class="tab-view">
+
       <div class="tab-view__title">
 
         <div class="tab-view__title-left-side">
@@ -78,5 +91,7 @@
       {{/if}}
       
     </div>
+
   {{/if}}
+  
 </template>

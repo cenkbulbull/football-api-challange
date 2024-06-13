@@ -1,10 +1,5 @@
 Template.registerHelper('getFirstTwoCharsUpperCase', function (word) {
-  if (word.length < 2) {
-    return word.toUpperCase()
-  }
-  let firstTwoChars = word.substring(0, 2)
-
-  return firstTwoChars.toUpperCase()
+  return (word.length < 2 ? word : word.substring(0, 2)).toUpperCase();
 })
 
 Template.registerHelper('getInitialsUpperCase', function (word) {
@@ -15,8 +10,5 @@ Template.registerHelper('getInitialsUpperCase', function (word) {
 })
 
 Template.registerHelper('getShortenText', function (text) {
-  if (typeof text !== 'string') {
-    return ''
-  }
-  return text.substring(0, 10)
+  return typeof text === 'string' ? text.substring(0, 10) : '';
 })

@@ -12,7 +12,9 @@
         </div>
   
         <div class="home__header-title-right-side">
+
           {{# select}} 
+
             {{#if isLoading}}
               <option>Yükleniyor</option>
             {{else}} 
@@ -20,7 +22,9 @@
                 <option value="{{this.key}}">{{this.league}}</option>
               {{/each}} 
             {{/if}}
+            
           {{/ select}}
+
         </div>
 
       </div>
