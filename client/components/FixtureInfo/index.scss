@@ -17,15 +17,20 @@
 
   &__team{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 32px;
 
-    &-first, &-second{
+    &-details{
       display: flex;
       align-items: center;
       gap: 15px;
       font-size: $font-size-lg;
       font-weight: $font-weight-normal;
+
+      &-home, &-away{
+        width: 150px;
+      }
     }
   }
 

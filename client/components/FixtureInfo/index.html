@@ -1,19 +1,20 @@
 <template name="fixtureInfo">
 
   <div class="fixture-info">
+
     <div class="fixture-info__team">
 
-      <div class="fixture-info__team-first">
+      <div class="fixture-info__team-details">
         {{> avatar class="avatar--purple avatar--size32"}}
-        <span>{{info.home}}</span>
+        <span class="fixture-info__team-details-home">{{info.home}}</span>
       </div> 
 
       <div class="fixture-info__team-score">
         {{# badge class="badge--purple"}} <span>{{info.skor}}</span> {{/ badge}}
       </div>
 
-      <div class="fixture-info__team-second">
-        <span>{{info.away}}</span>
+      <div class="fixture-info__team-details">
+        <span class="fixture-info__team-details-away">{{info.away}}</span>
         {{> avatar class="avatar--purple avatar--size32"}}
       </div>
 
@@ -24,7 +25,7 @@
     </div>
 
     <div class="fixture-info__status">
-      <span class="fixture-info__status-date">{{info.date}}</span>
+      <span class="fixture-info__status-date">{{getShortenText info.date}}</span>
       <div class="fixture-info__status-button-group">
         {{> button class="button--outline" iconClass="information-line icon--size20"}}
         {{> button class="button--outline" iconClass="line-chart-line icon--size20"}}

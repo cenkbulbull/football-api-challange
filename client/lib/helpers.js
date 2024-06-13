@@ -13,3 +13,10 @@ Template.registerHelper('getInitialsUpperCase', function (word) {
   const lastNameInitial = words[1].charAt(0).toUpperCase()
   return firstNameInitial + lastNameInitial
 })
+
+Template.registerHelper('getShortenText', function (text) {
+  if (typeof text !== 'string') {
+    return ''
+  }
+  return text.substring(0, 10)
+})
