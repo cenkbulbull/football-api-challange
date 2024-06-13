@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 88px;
 
   &__left-side{
     display: flex;
@@ -15,8 +14,7 @@
 
   &__right-side{
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 50px;
     font-weight: $font-weight-light;
   }
 }
