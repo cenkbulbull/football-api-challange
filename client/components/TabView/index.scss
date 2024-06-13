@@ -2,12 +2,30 @@
 @import '../../styles/base/variables';
 
 .tab-view{
-  display: none;
-  
-  &--active{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__item{
+    padding: 16px 24px;
+    border-radius: 8px;
+    color: $chaos-black;
+
+    &--fixture{
+      background-color: $whiteout;
+
+      &:nth-child(even){
+        background-color: $white;
+      }
+    }
+
+    &--team, &--player{
+      background-color: $nosegay;
+
+      &:nth-child(-n+4){
+        background-color: $alpine-goat;
+      }
+    }
   }
   
   &__title{
@@ -17,13 +35,11 @@
 
     &-right-side, &-left-side{
       display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-weight: $font-weight-light;
       color: $digital;
       font-size: $font-size-lg;
-      font-weight: $font-weight-light;
-
-      &-win, &-equal, &-defeat, &-points, &-goal, &-match{
-        width: 60px;
-      }
     }
   }
 

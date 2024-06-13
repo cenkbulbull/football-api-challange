@@ -4,17 +4,8 @@
 .team-info{
   display: flex;
   justify-content: space-between;
-  padding: 16px 8px 16px 20px;
-  border-radius: 8px;
-  color: $chaos-black;
-  font-size: $font-size-lg;
-  font-weight: $font-weight-normal;
-  background-color: $nosegay;
-  color: $chaos-black;
-
-  &:nth-child(-n+3){
-    background-color: $alpine-goat;
-  }
+  align-items: center;
+  gap: 88px;
 
   &__left-side{
     display: flex;
@@ -24,12 +15,8 @@
 
   &__right-side{
     display: flex;
-    align-items: center;
-    
-    &-win, &-equal, &-defeat, &-points{
-      width: 60px;
-      font-weight: $font-weight-light;
-    }
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: $font-weight-light;
   }
-
 }

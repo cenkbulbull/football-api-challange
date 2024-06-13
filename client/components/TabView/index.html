@@ -1,37 +1,37 @@
 <template name="tabView">
   {{#if isActive 'results'}}
-    <div id="results" class="tab-view tab-view--active">
+    <div id="results" class="tab-view">
       {{#if isLoading}}
         <div class="tab-view__loading">Yükleniyor</div>
       {{else}} 
         {{#each info}}
-          <div class="tab-view__item">{{> fixtureInfo info=this}}</div>
+          <div class="tab-view__item tab-view__item--fixture">{{> fixtureInfo info=this}}</div>
         {{/each}}
       {{/if}}
     </div>
   {{/if}}
 
   {{#if isActive 'league'}}
-    <div id="league" class="tab-view tab-view--active">
+    <div id="league" class="tab-view">
       <div class="tab-view__title">
         <div class="tab-view__title-left-side">
           <span>Kulüp</span>
         </div>
         <div class="tab-view__title-right-side">
           
-          <div class="tab-view__title-right-side-win">
+          <div class="tab-view__title-right-side-item">
             G
           </div>
     
-          <div class="tab-view__title-right-side-equal">
+          <div class="tab-view__title-right-side-item">
             B
           </div>
     
-          <div class="tab-view__title-right-side-defeat">
+          <div class="tab-view__title-right-side-item">
             M
           </div>
     
-          <div class="tab-view__title-right-side-points">
+          <div class="tab-view__title-right-side-item">
             Puan
           </div>
     
@@ -42,7 +42,7 @@
         <div class="tab-view__loading">Yükleniyor</div>
       {{else}} 
         {{#each info}}
-          <div class="tab-view__item">{{> teamInfo info=this }}</div>
+          <div class="tab-view__item tab-view__item--team">{{> teamInfo info=this }}</div>
         {{/each}}
       {{/if}}
       
@@ -50,7 +50,7 @@
   {{/if}}
 
   {{#if isActive 'goalKings'}}
-    <div id="goalKings" class="tab-view tab-view--active">
+    <div id="goalKings" class="tab-view">
       <div class="tab-view__title">
 
         <div class="tab-view__title-left-side">
@@ -58,11 +58,11 @@
         </div>
 
         <div class="tab-view__title-right-side">
-          <div class="tab-view__title-right-side-match">
+          <div class="tab-view__title-right-side-item">
             Maç
           </div>
     
-          <div class="tab-view__title-right-side-goal">
+          <div class="tab-view__title-right-side-item">
             Gol
           </div>
         </div>
@@ -73,7 +73,7 @@
         <div class="tab-view__loading">Yükleniyor</div>
       {{else}} 
         {{#each info}}
-          <div class="tab-view__item">{{> playerInfo info=this index=(increment @index) }}</div>
+          <div class="tab-view__item tab-view__item--player">{{> playerInfo info=this index=(increment @index) }}</div>
         {{/each}}
       {{/if}}
       
