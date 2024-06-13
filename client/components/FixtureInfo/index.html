@@ -5,7 +5,7 @@
     <div class="fixture-info__team">
 
       <div class="fixture-info__team-details">
-        {{> avatar class="avatar--purple avatar--size32"}}
+        {{# avatar class="avatar--purple avatar--size32"}}<span>{{getFirstTwoCharsUpperCase info.home}}</span> {{/avatar}}
         <span class="fixture-info__team-details-home">{{info.home}}</span>
       </div> 
 
@@ -15,7 +15,7 @@
 
       <div class="fixture-info__team-details">
         <span class="fixture-info__team-details-away">{{info.away}}</span>
-        {{> avatar class="avatar--purple avatar--size32"}}
+        {{# avatar class="avatar--purple avatar--size32"}}<span>{{getFirstTwoCharsUpperCase info.away}}</span> {{/avatar}}
       </div>
 
     </div>
