@@ -17,10 +17,19 @@
     flex-direction: column;
     gap: 32px;
 
+    @media (max-width: 600px) {
+      align-items: center;
+    }
+
     &-title{
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 20px;
+      }
 
       &-left-side{
         display: flex;
