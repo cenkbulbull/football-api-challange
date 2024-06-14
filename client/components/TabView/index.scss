@@ -35,10 +35,15 @@
 
     &-right-side, &-left-side{
       display: flex;
-      gap: 50px;
+      width: 200px;
       font-weight: $font-weight-light;
       color: $digital;
       font-size: $font-size-lg;
+
+      &-item{
+        flex: 1 1 50%;
+        padding: 0 5px;
+      }
     }
   }
 
